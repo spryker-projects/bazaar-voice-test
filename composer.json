@@ -1,5 +1,5 @@
 {
-    "name": "spryker/mini-framework",
+    "name": "spryker-projects/bazaar-voice-test",
     "description": "Spryker Mini-Framework",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -59,7 +59,7 @@
     },
     "config": {
         "platform": {
-            "php": "8.0.0"
+            "php": "7.4.28"
         },
         "preferred-install": {
             "spryker/*": "source",
@@ -77,7 +77,8 @@
             "composer/package-versions-deprecated": true,
             "codeception/c3": true,
             "spryker/composer-merge-plugin": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "sllh/composer-versions-check": true
         }
     }
 }

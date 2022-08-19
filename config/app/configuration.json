@@ -1,0 +1,16 @@
+{
+    "properties": {
+        "foo": {
+            "type": "string",
+            "widget": {
+                "id": "textline"
+            },
+            "placeholder": "foo",
+            "isRequired": true
+        }
+    },
+    "fieldsets": [],
+    "required": [
+        "foo"
+    ]
+}
