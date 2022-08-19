@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<transfers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="spryker:transfer-01 http://static.spryker.com/transfer-01.xsd">
+  <transfer name="PrivateCriteria">
+    <property name="privateConditions" type="PrivateConditions"/>
+    <property name="sortCollection" type="Sort[]" singular="sort"/>
+    <property name="pagination" type="Pagination"/>
+  </transfer>
+  <transfer name="PrivateConditions">
+    <property name="privateIds" type="int[]" singular="privateId"/>
+    <property name="uuids" type="string[]" singular="uuid"/>
+  </transfer>
+  <transfer name="PrivateCollection">
+    <property name="privates" type="Private[]" singular="private"/>
+    <property name="pagination" type="Pagination"/>
+  </transfer>
+  <transfer name="Sort">
+    <property name="field" type="string"/>
+    <property name="isAscending" type="bool"/>
+  </transfer>
+  <transfer name="Pagination">
+    <property name="limit" type="int"/>
+    <property name="offset" type="int"/>
+    <property name="page" type="int"/>
+    <property name="maxPerPage" type="int"/>
+    <property name="nbResults" type="int"/>
+    <property name="firstIndex" type="int"/>
+    <property name="lastIndex" type="int"/>
+    <property name="firstPage" type="int"/>
+    <property name="lastPage" type="int"/>
+    <property name="nextPage" type="int"/>
+    <property name="previousPage" type="int"/>
+  </transfer>
+  <transfer name="Private">
+    <property name="idPrivate" type="int"/>
+    <property name="uuid" type="string"/>
+  </transfer>
+  <transfer name="PrivateCollectionRequest">
+    <property name="isTransactional" type="bool"/>
+    <property name="privates" type="Private[]" singular="private"/>
+  </transfer>
+  <transfer name="PrivateCollectionResponse">
+    <property name="errors" type="Error[]" singular="error"/>
+    <property name="privates" type="Private[]" singular="private"/>
+  </transfer>
+  <transfer name="PrivateCollectionDeleteCriteria">
+    <property name="isTransactional" type="bool"/>
+    <property name="privateIds" type="int[]" singular="idPrivate"/>
+    <property name="uuids" type="string[]" singular="uuid"/>
+  </transfer>
+  <transfer name="Error">
+    <property name="message" type="string"/>
+    <property name="entityIdentifier" type="string"/>
+  </transfer>
+</transfers>

@@ -1,5 +1,5 @@
 {
-    "name": "spryker/mini-framework",
+    "name": "spryker-projects/bazaar-voice-test",
     "description": "Spryker Mini-Framework",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -9,7 +9,7 @@
         "spryker/console": "^4.10.2",
         "spryker/glue-application": "^1.39.0",
         "spryker/glue-backend-api-application": "^0.2.0",
-        "spryker/glue-http": "^0.3.0",
+        "spryker/glue-http": "^0.2.0",
         "spryker/glue-rest-api-convention": "^0.2.0",
         "spryker/install": "^1.0.0",
         "spryker/scheduler": "^1.2",
@@ -59,7 +59,7 @@
     },
     "config": {
         "platform": {
-            "php": "8.0.0"
+            "php": "7.4.28"
         },
         "preferred-install": {
             "spryker/*": "source",
@@ -77,7 +77,8 @@
             "composer/package-versions-deprecated": true,
             "codeception/c3": true,
             "spryker/composer-merge-plugin": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "sllh/composer-versions-check": true
         }
     }
 }
